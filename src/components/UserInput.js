@@ -1,17 +1,23 @@
 // @flow
 import * as React from 'react';
+import { Input } from 'reactstrap';
+import './UserInput.css';
 
 type Props = {
   defaultValue?: ?string,
-  onChangeHandler?: ?(event: SyntheticEvent<HTMLInputElement>) => void
+  onChangeHandler?: ?(event: SyntheticEvent<HTMLInputElement>) => void,
 }
 
 const UserInput = (props: Props) => {
   const { defaultValue, onChangeHandler } = props;
 
   return (
-    <div>
-      <input type="text" onChange={onChangeHandler} defaultValue={defaultValue} />
+    <div className="UserInput">
+      <Input
+        type="text"
+        onChange={onChangeHandler}
+        defaultValue={defaultValue}
+      />
     </div>
   );
 };
