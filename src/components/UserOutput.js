@@ -14,6 +14,6 @@ const UserOutput = (props: Props) => {
       <p>{textB}</p>
     </div>
   );
-}
+};
 
 export default UserOutput;

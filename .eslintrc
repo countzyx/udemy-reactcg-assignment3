@@ -28,6 +28,7 @@
   "plugins": ["react", "jsx-a11y", "import", "flowtype"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": 1,
     "no-console": 0
   }
 }
