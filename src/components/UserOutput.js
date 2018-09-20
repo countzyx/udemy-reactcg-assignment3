@@ -1,8 +1,9 @@
+// @flow
 import React from 'react';
 
 type Props = {
-  textA: ?string,
-  textB: ?string
+  textA?: ?string,
+  textB?: ?string
 }
 
 const UserOutput = (props: Props) => {
@@ -15,5 +16,10 @@ const UserOutput = (props: Props) => {
     </div>
   );
 };
+
+UserOutput.defaultProps = {
+  textA: null,
+  textB: null,
+}
 
 export default UserOutput;
